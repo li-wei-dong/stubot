@@ -1,6 +1,6 @@
-# 🌟 Starbot
+# Stubot
 
-![Starbot](https://heroku-www-files.s3.amazonaws.com/starbot/starbot-banner.png)
+![Stubot](http://informationtechnologysystems.com/wp-content/uploads/2016/01/cute-807306_960_720.png)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

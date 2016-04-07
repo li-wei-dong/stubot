@@ -24,11 +24,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => { res.send('\n 👋 🌍 \n') })
 
-app.post('/commands/starbot', (req, res) => {
+app.post('/commands/stubot', (req, res) => {
   let payload = req.body
 
-  if (!payload || payload.token !== config('STARBOT_COMMAND_TOKEN')) {
-    let err = '✋  Star—what? An invalid slash token was provided\n' +
+  if (!payload || payload.token !== config('STUBOT_COMMAND_TOKEN')) {
+    let err = '✋  Stu—what? An invalid slash token was provided\n' +
               '   Is your Slack slash token correctly configured?'
     console.log(err)
     res.status(401).end(err)
