@@ -13,7 +13,7 @@ const config = {
   WEBHOOK_URL: process.env.WEBHOOK_URL,
   STARBOT_COMMAND_TOKEN: process.env.STARBOT_COMMAND_TOKEN,
   SLACK_TOKEN: process.env.SLACK_TOKEN,
-  ICON_EMOJI: ':stars:'
+  ICON_EMOJI: 'http://informationtechnologysystems.com/wp-content/uploads/2016/01/cute-807306_960_720.png'
 }
 
 module.exports = (key) => {
