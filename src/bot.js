@@ -13,11 +13,11 @@ bot.started((payload) => {
 
 bot.message((msg) => {
   if (!msg.user) return
-  if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}+'hello'>`)) return
+  if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
 
   slack.chat.postMessage({
     token: config('SLACK_TOKEN'),
-    //icon_emoji: config('ICON_EMOJI'),
+    icon_url: config('ICON_URL'),
     channel: msg.channel,
     username: 'Stubot',
     text: `This is stu!"`
