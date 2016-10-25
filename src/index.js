@@ -36,6 +36,7 @@ app.post('/commands/stubot', (req, res) => {
   }
 
   let cmd = _.reduce(commands, (a, cmd) => {
+  	console.log(cmd);
     return payload.text.match(cmd.pattern) ? cmd : a
   }, helpCommand)
 
