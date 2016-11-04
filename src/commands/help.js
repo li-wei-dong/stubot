@@ -3,6 +3,7 @@
 
 const _ = require('lodash')
 const config = require('../config')
+const commands = reqire('./')
 
 const msgDefaults = {
   response_type: 'in_channel',
@@ -10,7 +11,21 @@ const msgDefaults = {
   icon_emoji: config('ICON_EMOJI')
 }
 
+var getCommands(commands) {
+	let cmdString = _.reduce(commands, (string, cmd) => {
+		return string + cmd + ', ';
+	}, "");
+
+	return cmdString;
+}
+
+
 let attachments = [
+  {
+  	title: 'List of commands',
+	text: getCommands(commands),
+	mrkdwn_in: ['text']
+  }
   {
     title: 'Stubot will help you find the hippest repos on GitHub',
     color: '#2FA44F',
