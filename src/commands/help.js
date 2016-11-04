@@ -27,7 +27,7 @@ let attachments = [
 	mrkdwn_in: ['text']
   }
   {
-    title: 'Stubot will help you find the hippest repos on GitHub',
+    title: 'Stubot will help you find the flyest repos on GitHub',
     color: '#2FA44F',
     text: '`/stubot repos` returns hip repos \n`/stubot javascript` returns hip JavaScript repos',
     mrkdwn_in: ['text']
