@@ -18,7 +18,7 @@ const msgDefaults = {
 
 function getCommands(commands) {
 	let cmdString = _.reduce(commands, (string, cmd) => {
-		return string + cmd + ', ';
+		return string + cmd.pattern + ', ';
 	}, "");
 
 	return cmdString;
