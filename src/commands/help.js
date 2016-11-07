@@ -2,6 +2,7 @@
 'use strict'
 
 const _ = require('lodash')
+const fs = require('fs')
 const config = require('../config')
 const commands = _.reduce(fs.readdirSync(__dirname), (a, file) => {
   if (file !== 'index.js') a.push(require(`./${file}`))
