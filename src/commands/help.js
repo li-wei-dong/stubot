@@ -15,7 +15,7 @@ const msgDefaults = {
   icon_emoji: config('ICON_EMOJI')
 }
 
-var getCommands(commands) {
+function getCommands(commands) {
 	let cmdString = _.reduce(commands, (string, cmd) => {
 		return string + cmd + ', ';
 	}, "");
