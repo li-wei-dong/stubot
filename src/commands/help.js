@@ -3,7 +3,7 @@
 
 const _ = require('lodash')
 const config = require('../config')
-const commands = reqire('./')
+const commands = require('./')
 
 const msgDefaults = {
   response_type: 'in_channel',
