@@ -25,7 +25,7 @@ let attachments = [
   	title: 'List of commands',
 	text: getCommands(commands),
 	mrkdwn_in: ['text']
-  }
+  },
   {
     title: 'Stubot will help you find the flyest repos on GitHub',
     color: '#2FA44F',
