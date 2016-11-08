@@ -20,7 +20,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: scriptures.length,
+    text: "There are " + scriptures.length + "scriptures.",
     mrkdwn_in: ['text']
   },
 ]
