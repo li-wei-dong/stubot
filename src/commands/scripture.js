@@ -3,6 +3,12 @@
 
 const _ = require('lodash')
 const config = require('../config')
+const scriptures = require(".\scriptures")
+
+function getScripture(scriptures) {
+	let num = Math.floor(Math.random() * scriptures.length)
+	return scriptures.length
+}
 
 const msgDefaults = {
   response_type: 'in_channel',
@@ -14,7 +20,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: 'This is a test, and a scripture will appear here later.',
+    text: getScripture(scriptures),
     mrkdwn_in: ['text']
   },
 ]
