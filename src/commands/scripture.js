@@ -3,7 +3,7 @@
 
 const _ = require('lodash')
 const config = require('../config')
-const scriptures = require("./scriptures")
+const scriptures = require("../data/scriptures")
 
 function getScripture(scriptures) {
 	let num = Math.floor(Math.random() * scriptures.length)
