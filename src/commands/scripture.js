@@ -28,9 +28,11 @@ function indexJSON(obj) {
 
 function getScripture(scriptures) {
 	let num = Math.floor(Math.random() * scriptureCount(scriptures))
+	console.log(num)
 	let scriptIndex = indexJSON(scriptures)
 
 	var scripture = scriptures[num]
+	console.log(scripture);
 	var scripturePassage;
 	for(var p in scripture.passage) {
 		scripturePassage += p + " "
