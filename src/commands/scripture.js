@@ -37,7 +37,7 @@ function getScripture(scriptures) {
 	for(var p in scripture.passage) {
 		scripturePassage += p + " "
 	}
-	return scripture
+	return scripture.passage + " -" + scripture.location + " " + num
 }
 
 const msgDefaults = {
