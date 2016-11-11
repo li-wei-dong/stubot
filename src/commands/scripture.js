@@ -31,7 +31,11 @@ function getScripture(scriptures) {
 	let scriptIndex = indexJSON(scriptures)
 
 	var scripture = scriptures[num]
-	return scripture
+	var scripturePassage;
+	for( p in scripture.passage) {
+		scripturePassage += p + " "
+	}
+	return scripturePassage + "-" + scripture.location
 }
 
 const msgDefaults = {
@@ -44,7 +48,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: "These are the scriptures: " + getScripture(scriptures.scriptures).location,
+    text: getScripture(scriptures.scriptures),
     mrkdwn_in: ['text']
   },
 ]
