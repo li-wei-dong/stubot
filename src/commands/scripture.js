@@ -27,7 +27,7 @@ function indexJSON(obj) {
 }
 
 function getScripture(scriptures) {
-	let num = Math.floor(Math.random() * scriptureCount(scriptures)
+	let num = Math.floor(Math.random() * scriptureCount(scriptures))
 	let scriptIndex = indexJSON(scriptures)
 
 	var scripture = scriptures.scriptIndex[num]
