@@ -2,8 +2,19 @@
 'use strict'
 
 const _ = require('lodash')
+const fs = require('fs')
 const config = require('../config')
 const scriptures = require("../data/scriptures")
+
+function scriptureCount(scriptures) {
+	var scripture
+	var count = 0
+
+	for(scripture in scriptures) {
+		count++
+	}
+	return count
+}
 
 function getScripture(scriptures) {
 	let num = Math.floor(Math.random() * scriptures.length)
@@ -20,7 +31,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: "There are " + scriptures.length + "scriptures.",
+    text: "There are " + scriptureCount(scriptures) + " scriptures.",
     mrkdwn_in: ['text']
   },
 ]
