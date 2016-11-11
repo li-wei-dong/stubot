@@ -16,9 +16,22 @@ function scriptureCount(scriptures) {
 	return count
 }
 
+function indexJSON(obj) {
+	var scriptureIndex = []
+	var a
+
+	for (a in obj) {
+		scriptureIndex.push(a.key)
+	}
+	return scriptureIndex
+}
+
 function getScripture(scriptures) {
-	let num = Math.floor(Math.random() * scriptures.length)
-	return scriptures.length
+	let num = Math.floor(Math.random() * scriptureCount(scriptures)
+	let scriptIndex = indexJSON(scriptures)
+
+	var scripture = scriptures.scriptIndex[num]
+	return scripture
 }
 
 const msgDefaults = {
@@ -31,7 +44,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: "There are " + scriptureCount(scriptures.scriptures) + " scriptures.",
+    text: getScripture(scritpures.scriptures),
     mrkdwn_in: ['text']
   },
 ]
