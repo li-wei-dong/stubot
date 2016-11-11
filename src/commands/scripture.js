@@ -21,7 +21,7 @@ function indexJSON(obj) {
 	var a
 
 	for (a in obj) {
-		scriptureIndex.push(a.key)
+		scriptureIndex.push(a)
 	}
 	return scriptureIndex
 }
