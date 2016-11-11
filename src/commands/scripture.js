@@ -35,7 +35,7 @@ function getScripture(scriptures) {
 	for(var p in scripture.passage) {
 		scripturePassage += p + " "
 	}
-	return scripturePassage + "-" + scripture.location
+	return scripture
 }
 
 const msgDefaults = {
@@ -48,7 +48,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: getScripture(scriptures.scriptures),
+    text: getScripture(scriptures.scriptures).passage,
     mrkdwn_in: ['text']
   },
 ]
