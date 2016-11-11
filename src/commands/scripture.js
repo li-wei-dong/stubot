@@ -30,7 +30,7 @@ function getScripture(scriptures) {
 	let num = Math.floor(Math.random() * scriptureCount(scriptures))
 	let scriptIndex = indexJSON(scriptures)
 
-	var scripture = scriptures.scriptures[num]
+	var scripture = scriptures[num]
 	return scripture
 }
 
