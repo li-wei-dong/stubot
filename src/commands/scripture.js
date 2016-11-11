@@ -32,7 +32,7 @@ function getScripture(scriptures) {
 
 	var scripture = scriptures[num]
 	var scripturePassage;
-	for( p in scripture.passage) {
+	for(var p in scripture.passage) {
 		scripturePassage += p + " "
 	}
 	return scripturePassage + "-" + scripture.location
