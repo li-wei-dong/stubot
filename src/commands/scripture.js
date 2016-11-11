@@ -44,7 +44,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: "These are the scriptures: " + scriptures.scriptures,//getScripture(scriptures.scriptures),
+    text: "These are the scriptures: " + indexJSON(scriptures.scriptures),//getScripture(scriptures.scriptures),
     mrkdwn_in: ['text']
   },
 ]
