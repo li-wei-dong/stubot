@@ -36,7 +36,7 @@ const msgDefaults = {
 const handler = (payload, res) => {
 	let attachments = [
 	  {
-		title: 'Stubot will retrieve a random scriptural thought for you.',
+		title: 'Stubot: Here is your scripture',
 		color: '#2FA44F',
 		text: getScripture(scriptures.scriptures),
 		mrkdwn_in: ['text']
