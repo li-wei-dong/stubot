@@ -27,16 +27,13 @@ function indexJSON(obj) {
 }
 
 function getScripture(scriptures) {
-	let num = Math.floor(Math.random() * scriptureCount(scriptures))
+	var num = Math.floor(Math.random() * scriptureCount(scriptures))
 	console.log(num)
 	let scriptIndex = indexJSON(scriptures)
 
-	var scripture = scriptures[num]
+	var scripture = scriptures[7]
 	console.log(scripture);
-	var scripturePassage;
-	for(var p in scripture.passage) {
-		scripturePassage += p + " "
-	}
+	
 	return scripture.passage + " -" + scripture.location + " " + num
 }
 
@@ -50,7 +47,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: getScripture(scriptures.scriptures).passage,
+    text: getScripture(scriptures.scriptures),
     mrkdwn_in: ['text']
   },
 ]
