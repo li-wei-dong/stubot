@@ -16,6 +16,11 @@ function scriptureCount(scriptures) {
 	return count
 }
 
+function randomNum() {
+	var num = Math.floor(Math.random() * scriptureCount(scriptures))
+	return num
+}
+
 function getScripture(scriptures) {
 	var num = Math.floor(Math.random() * scriptureCount(scriptures))
 	console.log(num)
@@ -36,7 +41,7 @@ let attachments = [
   {
     title: 'Stubot will retrieve a random scriptural thought for you.',
     color: '#2FA44F',
-    text: getScripture(scriptures.scriptures),
+    text: randomNum(),//getScripture(scriptures.scriptures),
     mrkdwn_in: ['text']
   },
 ]
