@@ -23,7 +23,7 @@ function getScripture(scriptures) {
 	var scripture = scriptures[7]
 	console.log(scripture);
 	
-	return scripture.passage + " -" + scripture.location + " " + num
+	return scripture.passage + " -" + scripture.location
 }
 
 const msgDefaults = {
