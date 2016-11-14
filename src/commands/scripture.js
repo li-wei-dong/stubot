@@ -20,10 +20,10 @@ function getScripture(scriptures) {
 	var num = Math.floor(Math.random() * scriptureCount(scriptures))
 	console.log(num)
 
-	var scripture = scriptures[7]
+	var scripture = scriptures[num]
 	console.log(scripture);
 	
-	return scripture.passage + " -" + scripture.location
+	return scripture.passage + "\n -" + scripture.location
 }
 
 const msgDefaults = {
