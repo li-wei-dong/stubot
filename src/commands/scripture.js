@@ -16,20 +16,9 @@ function scriptureCount(scriptures) {
 	return count
 }
 
-function indexJSON(obj) {
-	var scriptureIndex = []
-	var a
-
-	for (a in obj) {
-		scriptureIndex.push(a)
-	}
-	return scriptureIndex
-}
-
 function getScripture(scriptures) {
 	var num = Math.floor(Math.random() * scriptureCount(scriptures))
 	console.log(num)
-	let scriptIndex = indexJSON(scriptures)
 
 	var scripture = scriptures[7]
 	console.log(scripture);
