@@ -33,16 +33,16 @@ const msgDefaults = {
   icon_emoji: config('ICON_EMOJI')
 }
 
-let attachments = [
-  {
-    title: 'Stubot will retrieve a random scriptural thought for you.',
-    color: '#2FA44F',
-    text: getScripture(scriptures.scriptures),
-    mrkdwn_in: ['text']
-  },
-]
-
 const handler = (payload, res) => {
+	let attachments = [
+	  {
+		title: 'Stubot will retrieve a random scriptural thought for you.',
+		color: '#2FA44F',
+		text: getScripture(scriptures.scriptures),
+		mrkdwn_in: ['text']
+	  },
+	]
+
   let msg = _.defaults({
     channel: payload.channel_name,
     attachments: attachments
