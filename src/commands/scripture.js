@@ -36,6 +36,7 @@ const msgDefaults = {
 const handler = (payload, res) => {
 	let attachments = [
 	  {
+	  	fallback: getScripture(scriptures.scriptures),
 		title: 'Stubot: Here is your scripture',
 		color: '#2FA44F',
 		text: getScripture(scriptures.scriptures),
